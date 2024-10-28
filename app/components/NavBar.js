@@ -7,7 +7,14 @@ function MyNav() {
       <nav className="h-24 w-full bg-black md:fixed top-0 flex justify-around items-center  z-10">
         <div className="text-justify ml-3 py-3 md:py-5 md:block">
           <Link href="/">
-            <h2 className="text-2xl text-cyan-600 font-bold">LOGO</h2>
+            {/* <h2 className="text-2xl text-cyan-600 font-bold">LOGO</h2> */}
+            <Image
+              src="/Abou.jpeg"
+              alt="logo"
+              width={50}
+              height={70}
+              className="rounded-3xl mt-3 mb-3"
+            />
           </Link>
         </div>
         <div className="flex justify-between items-center ml-32">
@@ -39,7 +46,7 @@ function MyNav() {
               alt="menu"
               width={30}
               height={300}
-              className=" active:border-none"
+              className=" active:border-none hidden"
             />
           </button>
         </div>

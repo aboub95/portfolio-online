@@ -3,8 +3,14 @@ import Link from "next/link";
 
 function MyProject() {
   return (
-    <div className="h-screen bg-slate-500">
-      <h1>Mes Projects</h1>
+    <div>
+      <section
+        id="projects"
+        className="h-screen bg-cover"
+        style={{ backgroundImage: `url(/abou2.gif)` }}
+      >
+        <h1>Mes project</h1>
+      </section>
     </div>
   );
 }

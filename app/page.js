@@ -1,12 +1,10 @@
 import MyNav from "./components/NavBar";
 import CardC from "./components/compétences";
 import A_propos from "./components/a_propos";
-import Accueil from "./components/section1";
+import Accueil from "./components/Accueil";
 import MyProject from "./components/project";
 import MyFooter from "./components/footer";
-
-import Link from "next/link";
-import Image from "next/image";
+import MyContact from "./components/contact";
 
 export default function page() {
   return (
@@ -16,6 +14,7 @@ export default function page() {
       <A_propos />
       <CardC />
       <MyProject />
+      <MyContact />
       <MyFooter />
     </div>
   );

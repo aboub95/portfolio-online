@@ -20,7 +20,7 @@ function header() {
               Je suis un profesionnel du numérique, pour vos différents project.
               N’hésiter de me contacter.
             </p>
-            <button className="h-12 w-40 rounded-2xl bg-orange-500 text-white font-bold hover:bg-orange-600 ml-10 mt-20">
+            <button className="h-12 w-40 rounded-2xl bg-cyan-600 text-white font-bold hover:bg-cyan-600 ml-10 mt-20">
               Contactez-moi
             </button>
           </div>
