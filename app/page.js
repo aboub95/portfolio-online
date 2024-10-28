@@ -10,7 +10,7 @@ export default function page() {
   return (
     <div>
       <MyNav />
-      <Accueil />
+      <Accueil /> 
       <A_propos />
       <CardC />
       <MyProject />

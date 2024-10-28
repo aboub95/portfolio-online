@@ -1,66 +1,160 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
 function MyNav() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <>
-      <nav className="h-24 w-full bg-black md:fixed top-0 flex justify-around items-center  z-10">
-        <div className="text-justify ml-3 py-3 md:py-5 md:block">
-          <Link href="/">
-            {/* <h2 className="text-2xl text-cyan-600 font-bold">LOGO</h2> */}
+      <nav className="h-24 w-full bg-black md:fixed top-0 flex justify-between items-center px-5 z-10">
+        <div className="flex items-center">
+          <Link href="/" className="flex items-center">
             <Image
               src="/Abou.jpeg"
               alt="logo"
               width={50}
               height={70}
-              className="rounded-3xl mt-3 mb-3"
+              className="rounded-3xl"
             />
           </Link>
         </div>
-        <div className="flex justify-between items-center ml-32">
-          <ul className="h-12 flex justify-between items-center max-md:hidden">
-            <li className="pb-6 text-xl text-white py-2 md:px-6  border-b-2 md:border-b-0 rounded-3xl hover:bg-purple-700">
-              <Link href="/" className="flex justify-center items-center mt-3">
-                Accueil
-              </Link>
-            </li>
-            <li className="pb-6 text-xl text-white py-2 md:px-6 text-center rounded-3xl border-b-2 md:border-b-0 hover:bg-purple-700">
-              <Link href="/" className="flex justify-center items-center mt-3">
-                A propos
-              </Link>
-            </li>
-            <li className="pb-6 text-xl text-white py-2 md:px-6  rounded-3xl text-center border-b-2 md:border-b-0 hover:bg-purple-700">
-              <Link href="/" className="flex justify-center items-center mt-3">
-                Projects
-              </Link>
-            </li>
-            <li className="pb-6 text-xl text-white py-2 rounded-3xl md:px-6 text-center border-b-2 md:border-b-0 hover:bg-purple-700">
-              <Link href="/" className="flex justify-center items-center mt-3">
-                Contacts
-              </Link>
-            </li>
-          </ul>
-          <button className="p-2 text-gray-900 rounded-md outline-none focus:border-red-600">
+
+        {/* Je met mon menu burger pour les petit écrans */}
+        <div className="flex md:hidden">
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="text-white focus:outline-none"
+          >
             <Image
-              src="/MenuBg.png"
+              src="/menu001.png"
               alt="menu"
-              width={30}
-              height={300}
-              className=" active:border-none hidden"
+              width={50}
+              height={50}
+              className="block"
             />
           </button>
         </div>
-        <div className="h-20 w-52 bg-black flex justify-around items-center max-md:hidden">
+
+        <ul className={`md:flex md:items-center md:space-x-6 hidden`}>
+          <li>
+            <Link
+              href="/"
+              className="text-white text-xl hover:bg-cyan-600 rounded-3xl py-2 px-4"
+            >
+              Accueil
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/"
+              className="text-white text-xl hover:bg-cyan-600 rounded-3xl py-2 px-4"
+            >
+              A propos
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/"
+              className="text-white text-xl hover:bg-cyan-600 rounded-3xl py-2 px-4"
+            >
+              Projects
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/"
+              className="text-white text-xl hover:bg-cyan-600 rounded-3xl py-2 px-4"
+            >
+              Contacts
+            </Link>
+          </li>
+        </ul>
+
+        {/* Icônes de mes réseaux sociaux */}
+        <div className="hidden md:flex space-x-4">
           <Link href="/">
-            <Image src="/Linkedin.png" alt="linkdin" width={30} height={50} />
+            <Image src="/Linkedin.png" alt="LinkedIn" width={30} height={30} />
           </Link>
           <Link href="/">
-            <Image src="/Facebook.png" alt="linkdin" width={30} height={50} />
+            <Image src="/Facebook.png" alt="Facebook" width={30} height={30} />
           </Link>
           <Link href="/">
-            <Image src="/Instagram.png" alt="linkdin" width={30} height={50} />
+            <Image
+              src="/Instagram.png"
+              alt="Instagram"
+              width={30}
+              height={30}
+            />
           </Link>
         </div>
+
+        {isOpen && (
+          <div className="md:hidden absolute top-24 left-0 w-full bg-black py-4 shadow-lg z-20">
+            <ul className="flex flex-col items-center space-y-4">
+              <li>
+                <Link
+                  href="/"
+                  className="text-white text-lg hover:bg-purple-700 rounded-3xl py-2 px-4"
+                >
+                  Accueil
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/"
+                  className="text-white text-lg hover:bg-purple-700 rounded-3xl py-2 px-4"
+                >
+                  A propos
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/"
+                  className="text-white text-lg hover:bg-purple-700 rounded-3xl py-2 px-4"
+                >
+                  Projects
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/"
+                  className="text-white text-lg hover:bg-purple-700 rounded-3xl py-2 px-4"
+                >
+                  Contacts
+                </Link>
+              </li>
+              <div className="flex space-x-4 mt-4">
+                <Link href="/">
+                  <Image
+                    src="/Linkedin.png"
+                    alt="LinkedIn"
+                    width={30}
+                    height={30}
+                  />
+                </Link>
+                <Link href="/">
+                  <Image
+                    src="/Facebook.png"
+                    alt="Facebook"
+                    width={30}
+                    height={30}
+                  />
+                </Link>
+                <Link href="/">
+                  <Image
+                    src="/Instagram.png"
+                    alt="Instagram"
+                    width={30}
+                    height={30}
+                  />
+                </Link>
+              </div>
+            </ul>
+          </div>
+        )}
       </nav>
     </>
   );

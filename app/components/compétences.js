@@ -2,82 +2,74 @@ import Image from "next/image";
 
 function CardC() {
   return (
-    <>
-      <div>
-        {/* ici je met les carte des technologies acquises! */}
-        <div
-          className="h-screen w-full grid grid-cols-3 max-sm:grid-cols-3 items-center max-md:flex-col bg-cover"
-          style={{ backgroundImage: `url(/Desk.gif)` }}
-        >
-          <div className=" w-6/12 bg-black rounded-xl m-auto text-center">
-            <h1 className="text-3xl text-white font-bold text-center">HTML</h1>
-            <Image
-              src="/Logo.jpeg"
-              alt="HTML"
-              width={2000}
-              height={2000}
-              className="w-full rounded-xl h-36"
-            />
-          </div>
-          <div className=" w-6/12 bg-black rounded-xl">
-            <h1 className="text-3xl text-white font-bold text-center">CSS</h1>
-            <Image
-              src="/Will SCSS Be Replaced by CSS3_.jpeg"
-              alt="HTML"
-              width={2000}
-              height={2000}
-              className="w-full rounded-xl h-36"
-            />
-          </div>
-          <div className=" w-6/12 bg-black rounded-xl">
-            <h1 className="text-3xl text-white font-bold text-center">
-              JavaScript
-            </h1>
-            <Image
-              src="/Js.jpg"
-              alt="CSS"
-              width={2000}
-              height={20}
-              className="w-full rounded-xl h-36"
-            />
-          </div>
-          <div className=" w-6/12 bg-black rounded-xl m-auto">
-            <h1 className="text-3xl text-white font-bold text-center">
-              Tailwind css
-            </h1>
-            <Image
-              src="/A Look at Tailwind CSS.jpeg"
-              alt="CSS"
-              width={2000}
-              height={20}
-              className="w-full rounded-xl h-36"
-            />
-          </div>
-          <div className=" w-6/12 bg-black rounded-xl">
-            <h1 className="text-3xl text-white font-bold text-center">Git</h1>
-            <Image
-              src="/Git.jpg"
-              alt="CSS"
-              width={2000}
-              height={20}
-              className="w-full rounded-xl h-36"
-            />
-          </div>
-          <div className="w-6/12 bg-black rounded-xl">
-            <h1 className="text-3xl text-white font-bold text-center">
-              Next js
-            </h1>
-            <Image
-              src="/next14.png"
-              alt="HTML"
-              width={2000}
-              height={2000}
-              className="w-full rounded-xl h-36"
-            />
-          </div>
+    <div>
+      {/* ici je met les carte des technologies acquises! */}
+      <div
+        className="min-h-screen w-full grid gap-6 p-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center bg-cover"
+        style={{ backgroundImage: `url(/Desk.gif)` }}
+      >
+        <div className="w-full bg-black rounded-xl m-auto text-center p-4">
+          <h1 className="text-3xl text-white font-bold">HTML</h1>
+          <Image
+            src="/Logo.jpeg"
+            alt="HTML"
+            width={2000}
+            height={2000}
+            className="w-full rounded-xl h-36 object-cover"
+          />
+        </div>
+        <div className="w-full bg-black rounded-xl m-auto text-center p-4">
+          <h1 className="text-3xl text-white font-bold">CSS</h1>
+          <Image
+            src="/Will SCSS Be Replaced by CSS3_.jpeg"
+            alt="CSS"
+            width={2000}
+            height={2000}
+            className="w-full rounded-xl h-36 object-cover"
+          />
+        </div>
+        <div className="w-full bg-black rounded-xl m-auto text-center p-4">
+          <h1 className="text-3xl text-white font-bold">JavaScript</h1>
+          <Image
+            src="/Js.jpg"
+            alt="JavaScript"
+            width={2000}
+            height={2000}
+            className="w-full rounded-xl h-36 object-cover"
+          />
+        </div>
+        <div className="w-full bg-black rounded-xl m-auto text-center p-4">
+          <h1 className="text-3xl text-white font-bold">Tailwind CSS</h1>
+          <Image
+            src="/A Look at Tailwind CSS.jpeg"
+            alt="Tailwind CSS"
+            width={2000}
+            height={2000}
+            className="w-full rounded-xl h-36 object-cover"
+          />
+        </div>
+        <div className="w-full bg-black rounded-xl m-auto text-center p-4">
+          <h1 className="text-3xl text-white font-bold">Git</h1>
+          <Image
+            src="/Git.jpg"
+            alt="Git"
+            width={2000}
+            height={2000}
+            className="w-full rounded-xl h-36 object-cover"
+          />
+        </div>
+        <div className="w-full bg-black rounded-xl m-auto text-center p-4">
+          <h1 className="text-3xl text-white font-bold">Next.js</h1>
+          <Image
+            src="/next14.png"
+            alt="Next.js"
+            width={2000}
+            height={2000}
+            className="w-full rounded-xl h-36 object-cover"
+          />
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

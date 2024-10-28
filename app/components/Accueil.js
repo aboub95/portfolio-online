@@ -6,30 +6,30 @@ function Accueil() {
     <div>
       <section
         id="Accueil"
-        className="h-screen bg-gray-300 bg-cover"
+        className="bg-gray-300 bg-cover bg-center"
         style={{ backgroundImage: `url(/galaxie.gif)` }}
       >
-        <div className="flex items-center h-auto w-5/6 ml-28">
-          <div className="h-1/3 w-1/2 bg-transparent">
-            <h1 className="text-4xl font-bold ml-9 mt-28 text-white">
+        <div className="flex flex-col lg:flex-row items-center lg:h-screen w-full lg:w-5/6 lg:ml-28 p-4 lg:p-0">
+          <div className="lg:w-1/2 bg-transparent text-center lg:text-left">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mt-10 lg:mt-28 text-white">
               ◄..Bienvenu sur mon portfolio..►
             </h1>
-            <h1 className="text-4xl font-bold ml-9 mt-14 text-white"></h1>
-            <p className="text-2xl text-center mt-9 text-white">
-              Je suis un profesionnel du numérique, pour vos différents project.
-              N’hésiter de me contacter.
+            <p className="text-lg sm:text-xl lg:text-2xl mt-6 lg:mt-9 text-white px-2 lg:px-0">
+              Je suis un professionnel du numérique, pour vos différents
+              projets. N’hésitez pas à me contacter.
             </p>
-            <button className="h-12 w-40 rounded-2xl bg-cyan-500 text-white font-bold hover:bg-pink-500 ml-10 mt-20">
+            <button className="h-12 w-40 rounded-2xl bg-cyan-500 text-white font-bold hover:bg-pink-500 mt-10 lg:mt-20">
               Contactez-moi
             </button>
           </div>
-          <div className=" h-1/2 ml-56 mt-12">
+
+          <div className="w-full lg:w-1/2 flex justify-center lg:justify-end mt-12 lg:mt-0">
             <Image
               src="/marche.gif"
-              width={200}
-              height={1500}
+              width={300}
+              height={2000}
               alt="img"
-              className="w-full h-auto"
+              className="w-60 sm:w-72 md:w-80 lg:w-[450px] h-auto"
             />
           </div>
         </div>
