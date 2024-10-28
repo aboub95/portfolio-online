@@ -53,7 +53,7 @@ function CardC() {
           <Image
             src="/Git.jpg"
             alt="Git"
-            width={2000}
+            width={1000}
             height={2000}
             className="w-full rounded-xl h-36 object-cover"
           />

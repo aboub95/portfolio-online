@@ -19,20 +19,20 @@ function A_propos() {
           </h2>
           <p className="text-lg sm:text-xl text-justify font-semibold text-white">
             Je suis Abou et je suis développeur front-end passionné. Avec 1 an
-            d'expérience dans le domaine du développement web, je me suis
-            spécialisé dans la création d'interfaces utilisateurs modernes,
+            d`expérience dans le domaine du développement web, je me suis
+            spécialisé dans la création d`interfaces utilisateurs modernes,
             réactives et accessibles. Ma mission est de transformer des concepts
             créatifs en expériences numériques engageantes.
           </p>
           <br />
           <p className="text-lg sm:text-xl text-justify font-semibold text-white">
-            J'ai des compétences dans l'usage des technologies front-end comme :
+            J`ai des compétences dans l`usage des technologies front-end comme :
             <br />
             <strong>HTML/CSS</strong> : Création de structures sémantiques et de
             styles réactifs pour des sites web adaptatifs.
             <br />
             <br />
-            <strong>JavaScript</strong> : Développement d'interactions
+            <strong>JavaScript</strong> : Développement d`interactions
             dynamiques et de fonctionnalités riches.
             <br />
             <br />
@@ -41,7 +41,7 @@ function A_propos() {
             <br />
             <br />
             <strong>Outils de développement</strong> : Utilisation de Git et
-            d'autres outils pour optimiser le processus de développement.
+            d`autres outils pour optimiser le processus de développement.
           </p>
         </div>
         <MyCv />
