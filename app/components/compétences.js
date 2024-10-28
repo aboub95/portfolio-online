@@ -8,7 +8,7 @@ function CardC() {
         className="min-h-screen w-full grid gap-6 p-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center bg-cover"
         style={{ backgroundImage: `url(/Desk.gif)` }}
       >
-        <div className="w-full bg-black rounded-xl m-auto text-center p-4">
+        <div className="w-full bg-gray-500 rounded-xl m-auto text-center p-4">
           <h1 className="text-3xl text-white font-bold">HTML</h1>
           <Image
             src="/Logo.jpeg"
@@ -18,7 +18,7 @@ function CardC() {
             className="w-full rounded-xl h-36 object-cover"
           />
         </div>
-        <div className="w-full bg-black rounded-xl m-auto text-center p-4">
+        <div className="w-full bg-gray-500 rounded-xl m-auto text-center p-4">
           <h1 className="text-3xl text-white font-bold">CSS</h1>
           <Image
             src="/Will SCSS Be Replaced by CSS3_.jpeg"
@@ -28,7 +28,7 @@ function CardC() {
             className="w-full rounded-xl h-36 object-cover"
           />
         </div>
-        <div className="w-full bg-black rounded-xl m-auto text-center p-4">
+        <div className="w-full bg-gray-500 rounded-xl m-auto text-center p-4">
           <h1 className="text-3xl text-white font-bold">JavaScript</h1>
           <Image
             src="/Js.jpg"
@@ -38,7 +38,7 @@ function CardC() {
             className="w-full rounded-xl h-36 object-cover"
           />
         </div>
-        <div className="w-full bg-black rounded-xl m-auto text-center p-4">
+        <div className="w-full bg-gray-500 rounded-xl m-auto text-center p-4">
           <h1 className="text-3xl text-white font-bold">Tailwind CSS</h1>
           <Image
             src="/A Look at Tailwind CSS.jpeg"
@@ -48,7 +48,7 @@ function CardC() {
             className="w-full rounded-xl h-36 object-cover"
           />
         </div>
-        <div className="w-full bg-black rounded-xl m-auto text-center p-4">
+        <div className="w-full bg-gray-500 rounded-xl m-auto text-center p-4">
           <h1 className="text-3xl text-white font-bold">Git</h1>
           <Image
             src="/Git.jpg"
@@ -58,7 +58,7 @@ function CardC() {
             className="w-full rounded-xl h-36 object-cover"
           />
         </div>
-        <div className="w-full bg-black rounded-xl m-auto text-center p-4">
+        <div className="w-full bg-gray-500 rounded-xl m-auto text-center p-4">
           <h1 className="text-3xl text-white font-bold">Next.js</h1>
           <Image
             src="/next14.png"
