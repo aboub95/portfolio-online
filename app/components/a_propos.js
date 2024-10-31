@@ -14,7 +14,7 @@ function A_propos() {
           A propos
         </h1>
         <div className="bg-transparent w-full sm:w-10/12 lg:w-8/12 mx-auto mt-12 lg:mt-24 p-4 sm:p-6 lg:p-8 rounded-lg backdrop-blur-sm">
-          <h2 className="text-cyan-900 text-2xl sm:text-3xl font-bold mb-4">
+          <h2 className="text-cyan-500 text-2xl sm:text-3xl font-bold mb-4">
             Hello!!!
           </h2>
           <p className="text-lg sm:text-xl text-justify font-semibold text-white">
@@ -25,7 +25,7 @@ function A_propos() {
             créatifs en expériences numériques engageantes.
           </p>
           <br />
-          <p className="text-lg sm:text-xl text-justify font-semibold text-white">
+          <p className="text-lg sm:text-xl text-justify font-semibold text-white max-sm:hidden">
             J`ai des compétences dans l`usage des technologies front-end comme :
             <br />
             <strong>HTML/CSS</strong> : Création de structures sémantiques et de

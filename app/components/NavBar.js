@@ -97,7 +97,7 @@ function MyNav() {
             <ul className="flex flex-col items-center space-y-4">
               <li>
                 <Link
-                  href="/"
+                  href="#Accueil"
                   className="text-white text-lg hover:bg-purple-700 rounded-3xl py-2 px-4"
                 >
                   Accueil
@@ -105,7 +105,7 @@ function MyNav() {
               </li>
               <li>
                 <Link
-                  href="/"
+                  href="#A_Propos"
                   className="text-white text-lg hover:bg-purple-700 rounded-3xl py-2 px-4"
                 >
                   A propos
@@ -113,7 +113,7 @@ function MyNav() {
               </li>
               <li>
                 <Link
-                  href="/"
+                  href="#Technologies"
                   className="text-white text-lg hover:bg-purple-700 rounded-3xl py-2 px-4"
                 >
                   Projects
@@ -121,7 +121,7 @@ function MyNav() {
               </li>
               <li>
                 <Link
-                  href="/"
+                  href="#Contact"
                   className="text-white text-lg hover:bg-purple-700 rounded-3xl py-2 px-4"
                 >
                   Contacts

@@ -1,29 +1,54 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
 function MyCv() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleCv = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <div>
-      <form
-        action="/"
-        className="text-xl font-bold flex justify-around items-center mt-5 m-5"
+    <div className="m-5">
+      <button
+        onClick={toggleCv}
+        className="p-2 mb-3 text-white bg-blue-500 rounded-lg"
       >
-        <label className="flex justify-between items-center p-8 rounded-2xl bg-cyan-500 w-52 h-14">
-          <input type="checkbox" className="h-8 w-10 ml-5 peer" />
-          <span className="bg-gray-300 w-48 h-12 rounded-full flex flex-shrink-0 items-center after:bg-white after:w-5 after:h-5 after:rounded-full p-1 peer-checked:bg-green-600 peer-checked:after:translate-x-4">
-            Cv
-          </span>
-        </label>
-      </form>
-      {/* <div
-        action="/"
-        className="h-14 w-36 bg-slate-500 rounded-full flex justify-around items-center"
-      >
-        <input type="checkbox" className="h-8 w-10 ml-5 peer" />
-        <button className="bg-gray-300 w-36 h-14 rounded-full flex flex-shrink-0 items-center after:bg-white after:w-5 after:h-5 after:rounded-full p-1 peer-checked:bg-green-600 peer-checked:after:translate-x-4">
-          portfolio
-        </button>
-      </div> */}
+        {isOpen ? "Masquer le CV" : "Afficher le CV"}
+      </button>
+
+      {isOpen && (
+        <div className="p-5 mt-3 border rounded-lg bg-gray-100">
+          <h2 className="text-xl font-semibold">Mon Parcours Académique</h2>
+          <ul className="list-disc ml-5">
+            <li>
+              Licence 1 en Management et Gestion des Organisation - USIA-ESSIG
+              (2021-2022)
+            </li>
+            <li>
+              Licence 2 en Management et Gestion des Organisation - USIA-ESSIG
+              (2022-2023)
+            </li>
+            <li>
+              Licence 3 en Management et Gestion des Organisation - USIA-ESSIG
+              (2023-2024)
+            </li>
+            <li>
+              Formation en Développement web et web mobile - Ecole 241 (2024)
+            </li>
+          </ul>
+          <h2 className="text-xl font-semibold mt-4">
+            Expériences Professionnelles
+          </h2>
+          <ul className="list-disc ml-5">
+            <li>Développeur Web chez Phila.Inc (2021 - présent)</li>
+            <li>Stagiaire Développeur chez Entreprise 2 (2020)</li>
+          </ul>
+        </div>
+      )}
     </div>
   );
 }
