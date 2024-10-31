@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import MySlider from "./splide";
 
 function MyProject() {
   return (
@@ -10,6 +11,7 @@ function MyProject() {
         style={{ backgroundImage: `url(/abou2.gif)` }}
       >
         <h1>Mes project</h1>
+        <MySlider />
       </section>
     </div>
   );

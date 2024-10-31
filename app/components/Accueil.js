@@ -20,9 +20,11 @@ function Accueil() {
               disposition pour réaliser vos projets. N’hésitez pas à me
               contacter !
             </p>
-            <button className="h-12 w-40 rounded-2xl bg-cyan-500 text-white font-bold hover:bg-pink-500 mt-10 lg:mt-20">
-              Contactez-moi
-            </button>
+            <Link href="#Contact">
+              <button className="h-12 w-40 rounded-2xl bg-cyan-500 text-white font-bold hover:bg-pink-500 mt-10 lg:mt-20">
+                Contactez-moi
+              </button>
+            </Link>
           </div>
 
           <div className="w-full lg:w-1/2 flex justify-center lg:justify-end mt-12 lg:mt-0">
@@ -31,7 +33,7 @@ function Accueil() {
               width={300}
               height={2000}
               alt="img"
-              className="w-60 sm:w-72 md:w-80 lg:w-[450px] h-auto"
+              className="w-60 sm:w-72 md:w-80 lg:w-[450px] h-auto rounded-2xl mt-24"
             />
           </div>
         </div>

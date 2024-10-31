@@ -13,7 +13,7 @@ function MyNav() {
         <div className="flex items-center">
           <Link href="/" className="flex items-center">
             <Image
-              src="/Abou.jpeg"
+              src="/hut.svg"
               alt="logo"
               width={50}
               height={70}
@@ -41,7 +41,7 @@ function MyNav() {
         <ul className={`md:flex md:items-center md:space-x-6 hidden`}>
           <li>
             <Link
-              href="/"
+              href="#Accueil"
               className="text-white text-xl hover:bg-cyan-600 rounded-3xl py-2 px-4"
             >
               Accueil
@@ -49,7 +49,7 @@ function MyNav() {
           </li>
           <li>
             <Link
-              href="/"
+              href="#A_Propos"
               className="text-white text-xl hover:bg-cyan-600 rounded-3xl py-2 px-4"
             >
               A propos
@@ -57,15 +57,16 @@ function MyNav() {
           </li>
           <li>
             <Link
-              href="/"
+              href="#Technologies"
               className="text-white text-xl hover:bg-cyan-600 rounded-3xl py-2 px-4"
             >
               Projects
             </Link>
           </li>
+
           <li>
             <Link
-              href="/"
+              href="#Contact"
               className="text-white text-xl hover:bg-cyan-600 rounded-3xl py-2 px-4"
             >
               Contacts
@@ -78,7 +79,7 @@ function MyNav() {
           <Link href="/">
             <Image src="/Linkedin.png" alt="LinkedIn" width={30} height={30} />
           </Link>
-          <Link href="/">
+          <Link href="https://www.facebook.com/profile.php?id=100028926079303">
             <Image src="/Facebook.png" alt="Facebook" width={30} height={30} />
           </Link>
           <Link href="/">

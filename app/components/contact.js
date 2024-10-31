@@ -4,6 +4,7 @@ import Link from "next/link";
 function MyContact() {
   return (
     <div
+      id="Contact"
       className="min-h-screen bg-red-500 flex justify-center items-center bg-cover p-4"
       style={{ backgroundImage: `url(/taf.gif)` }}
     >

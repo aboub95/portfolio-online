@@ -5,13 +5,15 @@ function MyFooter() {
   return (
     <div className="bg-black flex flex-col md:flex-row md:justify-around items-center py-6 gap-4">
       <div className="flex items-center justify-center md:w-1/3">
-        <Image
-          src="/Abou.jpeg"
-          alt="Logo"
-          width={80}
-          height={80}
-          className="rounded-3xl"
-        />
+        <Link href="#Accueil">
+          <Image
+            src="/hut.svg"
+            alt="Logo"
+            width={80}
+            height={80}
+            className="rounded-3xl"
+          />
+        </Link>
       </div>
       <div className="flex flex-col items-center md:w-1/3 text-center">
         <div className="flex justify-center gap-6 my-4">
