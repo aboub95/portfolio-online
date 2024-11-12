@@ -98,7 +98,7 @@ function MyNav() {
               <li>
                 <Link
                   href="#Accueil"
-                  className="text-white text-lg hover:bg-purple-700 rounded-3xl py-2 px-4"
+                  className="text-white text-lg hover:bg-cyan-500 rounded-3xl py-2 px-4"
                 >
                   Accueil
                 </Link>
@@ -106,7 +106,7 @@ function MyNav() {
               <li>
                 <Link
                   href="#A_Propos"
-                  className="text-white text-lg hover:bg-purple-700 rounded-3xl py-2 px-4"
+                  className="text-white text-lg hover:bg-cyan-500 rounded-3xl py-2 px-4"
                 >
                   A propos
                 </Link>
@@ -114,7 +114,7 @@ function MyNav() {
               <li>
                 <Link
                   href="#Technologies"
-                  className="text-white text-lg hover:bg-purple-700 rounded-3xl py-2 px-4"
+                  className="text-white text-lg hover:bg-cyan-500 rounded-3xl py-2 px-4"
                 >
                   Projects
                 </Link>
@@ -122,7 +122,7 @@ function MyNav() {
               <li>
                 <Link
                   href="#Contact"
-                  className="text-white text-lg hover:bg-purple-700 rounded-3xl py-2 px-4"
+                  className="text-white text-lg hover:bg-cyan-500 rounded-3xl py-2 px-4"
                 >
                   Contacts
                 </Link>

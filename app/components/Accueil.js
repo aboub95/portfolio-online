@@ -21,7 +21,7 @@ function Accueil() {
               contacter !
             </p>
             <Link href="#Contact">
-              <button className="h-12 w-40 rounded-2xl bg-cyan-500 text-white font-bold hover:bg-pink-500 mt-10 lg:mt-20">
+              <button className="h-12 w-40 rounded-2xl bg-cyan-500 text-white font-bold hover:bg-green-500 mt-10 lg:mt-20">
                 Contactez-moi
               </button>
             </Link>

@@ -1,4 +1,4 @@
-// components/Slider.js
+// components pour les slide avec la librairies splide.js
 "use client";
 
 import React from "react";
@@ -11,14 +11,14 @@ const MySlider = () => {
     <Splide
       options={{
         type: "loop",
-        perPage: 3, // Nombre d'images par page par défaut
+        perPage: 3, // Je modifie le nombres d'images ici page par défaut
         perMove: 1,
         pagination: false,
         autoplay: true,
         breakpoints: {
-          1200: { perPage: 3 }, // Ordinateurs
-          900: { perPage: 3 }, // Tablettes
-          600: { perPage: 2 }, // Téléphones
+          1200: { perPage: 3 }, // Pour les ordinateurs
+          900: { perPage: 3 }, // Pour les Tablettes
+          600: { perPage: 2 }, // Pour les Téléphones
         },
       }}
     >
