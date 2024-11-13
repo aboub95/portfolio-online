@@ -3,7 +3,8 @@ import Link from "next/link";
 
 function MyContact() {
   return (
-    <div
+    <form
+      action="https://fr.pinterest.com/pin/16818198600952699/"
       id="Contact"
       className="min-h-screen bg-red-500 flex justify-center items-center bg-cover p-4"
       style={{ backgroundImage: `url(/taf.gif)` }}
@@ -37,11 +38,14 @@ function MyContact() {
           className="h-40 w-11/12 md:w-10/12 mt-4 rounded-xl p-3 border border-cyan-500 focus:border-cyan-400 outline-none"
           placeholder="Message"
         />
-        <button className="h-12 w-32 bg-cyan-500 text-white rounded-xl mt-4">
+        <button
+          type="submit"
+          className="h-12 w-32 bg-cyan-500 text-white rounded-xl mt-4"
+        >
           Envoyer
         </button>
       </div>
-    </div>
+    </form>
   );
 }
 
